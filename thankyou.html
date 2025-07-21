@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Course Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+            display: flex;
+            flex-direction: column; /* Stack header and content vertically */
+            align-items: center;
+            min-height: 100vh; /* Minimum height to fill viewport */
+            padding: 2rem; /* Padding around the main content */
+            box-sizing: border-box; /* Include padding in element's total width and height */
+        }
+        .page-container {
+            background-color: #ffffff; /* White background for page content */
+            border-radius: 1rem; /* Rounded corners */
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+            padding: 2.5rem; /* Generous padding inside the container */
+            max-width: 900px; /* Max width for readability */
+            width: 100%; /* Full width on smaller screens */
+            box-sizing: border-box;
+            margin-top: 2rem; /* Space below navigation */
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem; /* More rounded buttons */
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle button shadow */
+        }
+        .btn-primary {
+            background-color: #6366f1; /* Indigo */
+            color: #ffffff;
+        }
+        .btn-primary:hover {
+            background-color: #4f46e5; /* Darker indigo on hover */
+            transform: translateY(-1px); /* Slight lift effect */
+        }
+        nav {
+            width: 100%;
+            max-width: 900px;
+            background-color: #334155; /* Dark slate for nav */
+            padding: 1rem 2.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        nav a {
+            color: #cbd5e1; /* Light gray text */
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+        }
+        nav a:hover {
+            background-color: #475569; /* Darker gray on hover */
+            color: #ffffff;
+        }
+        nav a.active {
+            background-color: #6366f1; /* Indigo for active link */
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="text-xl font-bold text-white">CourseSite</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="thankyou.html" class="active">Thank You</a>
+        </div>
+    </nav>
+
+    <div class="page-container">
+        <!-- Thank You Page Content -->
+        <div class="text-center">
+            <h1 class="text-5xl font-extrabold text-green-700 mb-6">Thank You!</h1>
+            <p class="text-xl text-gray-700 mb-8 max-w-2xl mx-auto">
+                Your enrollment request has been successfully submitted. We will get back to you shortly with more details.
+            </p>
+            <a href="index.html" class="btn btn-primary text-xl px-8 py-3">
+                Return to Home
+            </a>
+        </div>
+    </div>
+</body>
+</html>

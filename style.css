@@ -1,0 +1,98 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f4f8; /* Light blue-gray background */
+    display: flex;
+    flex-direction: column; /* Stack header and content vertically */
+    align-items: center;
+    min-height: 100vh; /* Minimum height to fill viewport */
+    padding: 2rem; /* Padding around the main content */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+.page-container {
+    background-color: #ffffff; /* White background for page content */
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 2.5rem; /* Generous padding inside the container */
+    max-width: 900px; /* Max width for readability */
+    width: 100%; /* Full width on smaller screens */
+    box-sizing: border-box;
+    margin-top: 2rem; /* Space below navigation */
+}
+/* Custom styles for form elements for better appearance */
+input[type="text"],
+input[type="email"],
+select {
+    border: 1px solid #cbd5e1; /* Light gray border */
+    border-radius: 0.5rem; /* Slightly rounded corners */
+    padding: 0.75rem 1rem; /* Comfortable padding */
+    width: 100%; /* Full width */
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus {
+    outline: none;
+    border-color: #6366f1; /* Indigo focus border */
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); /* Soft focus ring */
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem; /* More rounded buttons */
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle button shadow */
+}
+.btn-primary {
+    background-color: #6366f1; /* Indigo */
+    color: #ffffff;
+}
+.btn-primary:hover {
+    background-color: #4f46e5; /* Darker indigo on hover */
+    transform: translateY(-1px); /* Slight lift effect */
+}
+.btn-secondary {
+    background-color: #e2e8f0; /* Light gray */
+    color: #475569; /* Slate 700 */
+}
+.btn-secondary:hover {
+    background-color: #cbd5e1; /* Darker gray on hover */
+    transform: translateY(-1px);
+}
+.course-card {
+    background-color: #f8fafc; /* Lighter background for course cards */
+    border: 1px solid #e2e8f0; /* Light border */
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+nav {
+    width: 100%;
+    max-width: 900px;
+    background-color: #334155; /* Dark slate for nav */
+    padding: 1rem 2.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a {
+    color: #cbd5e1; /* Light gray text */
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+nav a:hover {
+    background-color: #475569; /* Darker gray on hover */
+    color: #ffffff;
+}
+nav a.active {
+    background-color: #6366f1; /* Indigo for active link */
+    color: #ffffff;
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Course Website</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link to external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="text-xl font-bold text-white">CourseSite</div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="courses.html" class="active">Courses</a>
+            <a href="thankyou.html">Thank You</a>
+        </div>
+    </nav>
+
+    <div class="page-container">
+        <!-- Courses Page Content -->
+        <h1 class="text-4xl font-bold text-gray-900 mb-8 text-center">Our Courses</h1>
+
+        <div class="grid md:grid-cols-2 gap-6 mb-10">
+            <!-- Course 1 -->
+            <div class="course-card">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Web Development Fundamentals</h2>
+                <p class="text-gray-600 mb-4">
+                    Learn the basics of HTML, CSS, and JavaScript to build your first websites.
+                </p>
+                <span class="inline-block bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Beginner</span>
+            </div>
+            <!-- Course 2 -->
+            <div class="course-card">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Advanced Python Programming</h2>
+                <p class="text-gray-600 mb-4">
+                    Dive deep into Python with advanced topics like data structures, algorithms, and web frameworks.
+                </p>
+                <span class="inline-block bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Intermediate</span>
+            </div>
+            <!-- Course 3 -->
+            <div class="course-card">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Data Science with R</h2>
+                <p class="text-gray-600 mb-4">
+                    Master data analysis, visualization, and machine learning using the R programming language.
+                </p>
+                <span class="inline-block bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Intermediate</span>
+            </div>
+            <!-- Course 4 -->
+            <div class="course-card">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Digital Marketing Essentials</h2>
+                <p class="text-gray-600 mb-4">
+                    Understand SEO, social media marketing, email campaigns, and content strategy.
+                </p>
+                <span class="inline-block bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded-full">Beginner</span>
+            </div>
+        </div>
+
+        <h2 class="text-3xl font-bold text-gray-900 mb-6 text-center">Enroll Now!</h2>
+        <form id="enrollment-form" class="space-y-6" action="thankyou.html" method="GET">
+            <div>
+                <label for="full-name" class="block text-gray-700 text-sm font-medium mb-2">Full Name</label>
+                <input type="text" id="full-name" name="fullName" placeholder="John Doe" required>
+            </div>
+            <div>
+                <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+            </div>
+            <div>
+                <label for="course-select" class="block text-gray-700 text-sm font-medium mb-2">Select Course</label>
+                <select id="course-select" name="selectedCourse" required>
+                    <option value="">-- Please choose a course --</option>
+                    <option value="web-development">Web Development Fundamentals</option>
+                    <option value="python-programming">Advanced Python Programming</option>
+                    <option value="data-science-r">Data Science with R</option>
+                    <option value="digital-marketing">Digital Marketing Essentials</option>
+                </select>
+            </div>
+            <div class="flex justify-between items-center mt-8">
+                <a href="index.html" class="btn btn-secondary">
+                    Back to Home
+                </a>
+                <button type="submit" class="btn btn-primary">
+                    Submit Enrollment
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
